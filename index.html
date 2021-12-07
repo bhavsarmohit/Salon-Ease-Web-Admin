@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>Salon Ease</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <!-- =========================== -->
+  <!-- auth admin -->
+
+  <div id="login_div" class="main-div">
+    <h3>Salon Ease Admin Panel</h3>
+    <input type="email" placeholder="Email" id="email_field" />
+    <input type="password" placeholder="Password" id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Salon Ease. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <!-- =========================== -->
+
+  <!-- =============================== -->
+  <!-- home dashboard -->
+
+  
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+<script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDvBYXwAU5n4bvK9jyV8Vs5sbQZLGbOkoc",
+        authDomain: "salon-ease.firebaseapp.com",
+        projectId: "salon-ease",
+        storageBucket: "salon-ease.appspot.com",
+        messagingSenderId: "540953236071",
+        appId: "1:540953236071:web:0e5749a31da1ad91323ac2",
+        measurementId: "G-ZFTKRQ1W1V"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+
+
+  <script src="index.js"></script>
+
+</body>
+</html>
